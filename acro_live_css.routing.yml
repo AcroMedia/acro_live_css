@@ -1,0 +1,7 @@
+acro_live_css.content:
+  path: '/livecss'
+  defaults:
+    _controller: '\Drupal\acro_live_css\Controller\LiveCSSController::content'
+    _title: 'Live CSS'
+  requirements:
+    _permission: 'access content'

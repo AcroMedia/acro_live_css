@@ -1,0 +1,1109 @@
+{{ attach_library('acro_live_css/acro-live-css') }}
+
+<p>{{ 'This is a general site style guide.'|t }}</p>
+
+<div class="row">
+  <div class="col-md-9">
+
+    <div class="live-css-section live-css-variables">
+      <h1 id="variables" class="h-live-css-section">{{ 'Variables'|t }}</h1>
+      <h2 id="colors" class="sub-header">{{ 'Colors'|t }}</h2>
+
+      <div class="live-css-variables">
+        <ul class="list-inline">
+          <li class="live-css-v-primary"><i></i><strong>{{ 'Primary'|t }}:</strong> $c-primary</li>
+          <li class="live-css-v-secondary"><i></i><strong>{{ 'Secondary'|t }}:</strong> $c-secondary</li>
+          <li class="live-css-v-tertiary"><i></i><strong>{{ 'Tertiary'|t }}:</strong> $c-tertiary</li>
+        </ul>
+
+        <ul class="list-inline">
+          <li class="live-css-v-accent-1"><i></i><strong>{{ 'Accent 1'|t }}:</strong> $c-accent-1</li>
+          <li class="live-css-v-accent-2"><i></i><strong>{{ 'Accent 2'|t }}:</strong> $c-accent-2</li>
+          <li class="live-css-v-accent-3"><i></i><strong>{{ 'Accent 3'|t }}:</strong> $c-accent-3</li>
+          <li class="live-css-v-body"><i></i><strong>{{ 'Body Text'|t }}:</strong> $c-body</li>
+          <li class="live-css-v-link"><i></i><strong>{{ 'Link'|t }}:</strong> $c-link</li>
+          <li class="live-css-v-link-hover"><i></i><strong>{{ 'Link Hover'|t }}:</strong> $c-link-hover</li>
+        </ul>
+
+        <ul class="list-inline">
+          <li class="live-css-v-gray-base"><i></i><strong>{{ 'Gray Base'|t }}:</strong> $gray-base</li>
+          <li class="live-css-v-gray-darker"><i></i><strong>{{ 'Gray Darker'|t }}:</strong> $gray-darker</li>
+          <li class="live-css-v-gray-dark"><i></i><strong>{{ 'Gray Dark'|t }}:</strong> $gray-dark</li>
+          <li class="live-css-v-gray"><i></i><strong>{{ 'Gray'|t }}:</strong> $gray</li>
+          <li class="live-css-v-gray-light"><i></i><strong>{{ 'Gray Light'|t }}:</strong> $gray-light</li>
+          <li class="live-css-v-gray-lighter"><i></i><strong>{{ 'Gray Lighter'|t }}:</strong> $gray-lighter</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="fonts" class="sub-header">{{ 'Fonts'|t }}</h2>
+
+      <ul class="clearfix">
+        <li class="live-css-v-f-primary"><strong>{{ 'Primary'|t }} ($f-primary):</strong> Lorem ipsum dolor sit amet</li>
+        <li class="live-css-v-f-secondary"><strong>{{ 'Secondary'|t }} ($f-secondary):</strong> Lorem ipsum dolor sit amet</li>
+        <li class="live-css-v-f-body"><strong>{{ 'Body'|t }} ($f-body):</strong> Lorem ipsum dolor sit amet</li>
+      </ul>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="other-variables" class="sub-header">{{ 'Other Variables'|t }}</h2>
+      <p>The border radius variable is applied to buttons, form fields, pagination, content tabs, links, cards, and modals.</p>
+      <div class="live-css-variables">
+        <ul class="list-inline">
+          <li class="live-css-v-o-border-radius"><i></i><strong>{{ 'Border Radius'|t }}:</strong> $border-radius</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="live-css-section">
+      <h1 id="typography" class="h-live-css-section">{{ 'Typography'|t }}</h1>
+
+      <h2 id="headings" class="sub-header">{{ 'Headings'|t }}</h2>
+
+      <h1>{{ 'Sample Heading (h1)'|t }}</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales diam ac arcu blandit venenatis.
+      </p>
+
+      <h2>{{ 'Sample Heading (h2)'|t }}</h2>
+      <p>
+        Lorem ipsum dolor sit amet, <a href="#">{{ 'Sample inline link'|t }}</a>, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h3>{{ 'Sample Heading (h3)'|t }}</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h4>{{ 'Sample Heading (h4)'|t }}</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h5>{{ 'Sample Heading (h5)'|t }}</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <h6>{{ 'Sample Heading (h6)'|t }}</h6>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="paragraphs" class="sub-header">{{ 'Paragraphs'|t }}</h2>
+      <p class="lead">Lead paragraph - class name "lead", consectetur adipiscing elit. Pellentesque sodales diam ac arcu blandit venenatis. Fusce efficitur dolor elit, in dictum dui consectetur vel.</p>
+
+      <p><img class="img-right" src="{{ module_path }}/gfx/img_sample_content.jpg" alt="" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales diam ac arcu blandit venenatis. Fusce efficitur dolor elit, in dictum dui consectetur vel. Praesent in risus non nunc feugiat consequat nec quis enim. Suspendisse rhoncus turpis in libero posuere molestie. Vestibulum viverra metus a mauris dapibus euismod.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales diam ac arcu blandit venenatis. Fusce efficitur dolor elit, in dictum dui consectetur vel. Praesent in risus non nunc feugiat consequat nec quis enim. Suspendisse rhoncus turpis in libero posuere molestie. Vestibulum viverra metus a mauris dapibus euismod.</p>
+
+      <blockquote>
+        <p>
+          {{ 'Sample Blockquote.'|t }} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        </p>
+      </blockquote>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="lists" class="sub-header">{{ 'Lists'|t }}</h2>
+      <ul>
+        <li>Some bulleted list items.</li>
+        <li>Some bulleted list items.</li>
+        <li>Some bulleted list items.</li>
+      </ul>
+
+      <ol>
+        <li>Some ordered list items.</li>
+        <li>Some ordered list items.</li>
+        <li>Some ordered list items.</li>
+      </ol>
+    </div>
+
+    <div class="live-css-section">
+      <h1 id="tables" class="h-live-css-section">{{ 'Tables'|t }}</h1>
+
+      <h2 id="basic-tables" class="sub-header">{{ 'Basic Table'|t }}</h2>
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Title</th>
+          <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>John</td>
+          <td>250-801-1111</td>
+          <td>Web Developer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>250-801-2111</td>
+          <td>Senior Designer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>250-801-3111</td>
+          <td>Director</td>
+          <td>Male</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="striped-tables" class="sub-header">{{ 'Striped Table'|t }}</h2>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Title</th>
+          <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>John</td>
+          <td>250-801-1111</td>
+          <td>Web Developer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>250-801-2111</td>
+          <td>Senior Designer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>250-801-3111</td>
+          <td>Director</td>
+          <td>Male</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="bordered-tables" class="sub-header">{{ 'Bordered Table'|t }}</h2>
+
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Title</th>
+          <th>Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>John</td>
+          <td>250-801-1111</td>
+          <td>Web Developer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>250-801-2111</td>
+          <td>Senior Designer</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>250-801-3111</td>
+          <td>Director</td>
+          <td>Male</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="live-css-section">
+      <h1 id="buttons" class="h-live-css-section">{{ 'Buttons'|t }}</h1>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <button type="button" class="btn btn-default btn-lg">Large button</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary">Default button</button>
+        <button type="button" class="btn btn-default">Default button</button>
+      </p>
+    </div>
+
+    <div class="live-css-section">
+      <h1 id="drupal-specific" class="h-live-css-section">{{ 'Drupal Specific'|t }}</h1>
+
+      <h2 id="admin-tabs" class="sub-header">{{ 'Admin Tabs'|t }}</h2>
+
+      <ul class="tabs primary clearfix">
+        <li><a href="#">{{ 'View'|t }}</a></li>
+        <li><a href="#">{{ 'Edit'|t }}</a></li>
+        <li><a href="#">{{ 'Clone'|t }}</a></li>
+      </ul>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="drupal-messages" class="sub-header">{{ 'Drupal Messages'|t }}</h2>
+
+      <div role="contentinfo" aria-label="Status message" class="messages messages--status">
+        <h2 class="visually-hidden">{{ 'Status Message'|t }}</h2>
+        {{ 'Status Message'|t }}
+      </div>
+      <div role="contentinfo" aria-label="Status message" class="messages messages--warning">
+        <h2 class="visually-hidden">{{ 'Warning Message'|t }}</h2>
+        {{ 'Warning Message'|t }}
+      </div>
+      <div role="contentinfo" aria-label="Status message" class="messages messages--error">
+        <h2 class="visually-hidden">{{ 'Error Message'|t }}</h2>
+        {{ 'Error Message'|t }}
+      </div>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="drupal-forms" class="sub-header">{{ 'Forms'|t }}</h2>
+
+      {# Bootstrap Form #}
+      <form>
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="control-label" for="textinput">Text Input <span class="form-required" title="This field is required.">*</span></label>
+          <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md" required="">
+          <span class="help-block">help text</span>
+        </div>
+
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="control-label" for="dropdown">Dropdown <span class="form-optional" title="This field is optional.">- Optional</span></label>
+          <select id="dropdown" name="dropdown" class="form-control">
+            <option value="1">Option one</option>
+            <option value="2">Option two</option>
+          </select>
+        </div>
+
+        <!-- Multiple Checkboxes -->
+        <div class="form-group">
+          <label class="control-label" for="checkboxes">Checkboxes <span class="form-optional" title="This field is optional.">- Optional</span></label>
+          <div class="checkbox">
+            <label for="checkboxes-0">
+              <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+              Option one
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkboxes-1">
+              <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+              Option two
+            </label>
+          </div>
+        </div>
+
+        <!-- Multiple Radios -->
+        <div class="form-group">
+          <label class="control-label" for="radios">Radio Buttons <span class="form-optional" title="This field is optional.">- Optional</span></label>
+          <div class="radio">
+            <label for="radios-0">
+              <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+              Option one
+            </label>
+          </div>
+          <div class="radio">
+            <label for="radios-1">
+              <input type="radio" name="radios" id="radios-1" value="2">
+              Option two
+            </label>
+          </div>
+        </div>
+
+        <!-- File Button -->
+        <div class="form-group">
+          <label class="control-label" for="fileupload">File Upload <span class="form-optional" title="This field is optional.">- Optional</span></label>
+          <input id="fileupload" name="fileupload" class="input-file" type="file">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="control-label" for="textarea">Text Area <span class="form-required" title="This field is required.">*</span></label>
+          <textarea rows="5" class="form-control" id="textarea" name="textarea"></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Primary Button</button>
+        </div>
+
+      </form>
+      {# / Bootstrap Form #}
+
+      {# Form Sample #}
+      <!-- <form class="contact-message-contact-us-form-form contact-message-form contact-form" data-user-info-from-browser="" data-drupal-selector="contact-message-contact-us-form-form" action="/contact/contact_us_form" method="post" id="contact-message-contact-us-form-form" accept-charset="UTF-8" data-drupal-form-fields="edit-name,edit-mail,edit-field-phone-number-optional-0-value,edit-subject-0-value,edit-message-0-value,edit-field-how-did-you-hear-about-us-,edit-submit,edit-preview">
+        <input data-drupal-selector="form-epkihvb1-6pmlyljvyxb4vycqukolrwldvefxddhqlu" type="hidden" name="form_build_id" value="form-EPkIhvb1-6PmlYlJVYxb4vycQuKoLRwLdVEFXdDhQLU">
+        <input data-drupal-selector="edit-contact-message-contact-us-form-form" type="hidden" name="form_id" value="contact_message_contact_us_form_form">
+        <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-name form-item-name">
+          <label for="edit-name" class="js-form-required form-required">Your name</label>
+          <input data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="60" maxlength="255" class="form-text required" required="required" aria-required="true">
+
+        </div>
+        <div class="js-form-item form-item js-form-type-email form-type-email js-form-item-mail form-item-mail">
+          <label for="edit-mail" class="js-form-required form-required">Your email address</label>
+          <input data-drupal-selector="edit-mail" type="email" id="edit-mail" name="mail" value="" size="60" maxlength="254" class="form-email required" required="required" aria-required="true">
+
+        </div>
+        <div class="field--type-string field--name-field-phone-number-optional- field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-field-phone-number-optional-wrapper" id="edit-field-phone-number-optional-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-field-phone-number-optional--0-value form-item-field-phone-number-optional--0-value">
+            <label for="edit-field-phone-number-optional-0-value">Phone Number (Optional)</label>
+            <input class="js-text-full text-full form-text" data-drupal-selector="edit-field-phone-number-optional-0-value" type="text" id="edit-field-phone-number-optional-0-value" name="field_phone_number_optional_[0][value]" value="" size="60" maxlength="255" placeholder="">
+
+          </div>
+
+        </div>
+        <div class="field--type-string field--name-subject field--widget-string-textfield js-form-wrapper form-wrapper" data-drupal-selector="edit-subject-wrapper" id="edit-subject-wrapper">      <div class="js-form-item form-item js-form-type-textfield form-type-textfield js-form-item-subject-0-value form-item-subject-0-value">
+            <label for="edit-subject-0-value" class="js-form-required form-required">Subject</label>
+            <input class="js-text-full text-full form-text required" data-drupal-selector="edit-subject-0-value" type="text" id="edit-subject-0-value" name="subject[0][value]" value="" size="60" maxlength="100" placeholder="" required="required" aria-required="true">
+
+          </div>
+
+        </div>
+        <div class="field--type-string-long field--name-message field--widget-string-textarea js-form-wrapper form-wrapper" data-drupal-selector="edit-message-wrapper" id="edit-message-wrapper">      <div class="js-form-item form-item js-form-type-textarea form-type-textarea js-form-item-message-0-value form-item-message-0-value">
+            <label for="edit-message-0-value" class="js-form-required form-required">Message</label>
+            <div class="form-textarea-wrapper">
+              <textarea class="js-text-full text-full form-textarea required resize-vertical" data-drupal-selector="edit-message-0-value" id="edit-message-0-value" name="message[0][value]" rows="12" cols="60" placeholder="" required="required" aria-required="true"></textarea>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="field--type-list-string field--name-field-how-did-you-hear-about-us- field--widget-options-select js-form-wrapper form-wrapper" data-drupal-selector="edit-field-how-did-you-hear-about-us-wrapper" id="edit-field-how-did-you-hear-about-us-wrapper"><div class="js-form-item form-item js-form-type-select form-type-select js-form-item-field-how-did-you-hear-about-us- form-item-field-how-did-you-hear-about-us-">
+            <label for="edit-field-how-did-you-hear-about-us-" class="js-form-required form-required">How Did You Hear About Us?</label>
+            <select data-drupal-selector="edit-field-how-did-you-hear-about-us-" aria-describedby="edit-field-how-did-you-hear-about-us---description" id="edit-field-how-did-you-hear-about-us-" name="field_how_did_you_hear_about_us_" class="form-select required" required="required" aria-required="true"><option value="_none">- Select a value -</option><option value="Online Ad">Online Ad</option><option value="YouTube">YouTube</option><option value="Friend">Friend</option><option value="Other">Other</option></select>
+            <div id="edit-field-how-did-you-hear-about-us---description" class="description">
+              Sample field help text.
+            </div>
+          </div>
+        </div>
+        <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+          <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Send message" class="button button--primary js-form-submit form-submit">
+          <input data-drupal-selector="edit-preview" type="submit" id="edit-preview" name="op" value="Preview" class="button js-form-submit form-submit">
+        </div>
+      </form> -->
+      {# / Form Sample #}
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="drupal-pagination" class="sub-header">{{ 'Pagination'|t }}</h2>
+
+      <div>
+        {# Pagination Sample #}
+        <nav class="pager" role="navigation" aria-labelledby="pagination-heading">
+          <h4 id="pagination-heading" class="visually-hidden">Pagination</h4>
+          <ul class="pager__items js-pager__items">
+            <li class="pager__item pager__item--first">
+              <a href="?page=0" title="Go to first page">
+                <span class="visually-hidden">First page</span>
+                <span aria-hidden="true">« First</span>
+              </a>
+            </li>
+            <li class="pager__item pager__item--previous">
+              <a href="?page=0" title="Go to previous page" rel="prev">
+                <span class="visually-hidden">Previous page</span>
+                <span aria-hidden="true">‹ Previous</span>
+              </a>
+            </li>
+            <li class="pager__item">
+              <a href="?page=0" title="Go to page 1">
+            <span class="visually-hidden">
+              Page
+            </span>1</a>
+            </li>
+            <li class="pager__item is-active">
+              <a href="?page=1" title="Current page">
+            <span class="visually-hidden">
+              Current page
+            </span>2</a>
+            </li>
+            <li class="pager__item">
+              <a href="?page=2" title="Go to page 3">
+            <span class="visually-hidden">
+              Page
+            </span>3</a>
+            </li>
+            <li class="pager__item pager__item--next">
+              <a href="?page=2" title="Go to next page" rel="next">
+                <span class="visually-hidden">Next page</span>
+                <span aria-hidden="true">Next ›</span>
+              </a>
+            </li>
+            <li class="pager__item pager__item--last">
+              <a href="?page=2" title="Go to last page">
+                <span class="visually-hidden">Last page</span>
+                <span aria-hidden="true">Last »</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        {# / Pagination Sample #}
+      </div>
+    </div>
+
+    <div class="live-css-section">
+      <h1 id="rich-media" class="h-live-css-section">{{ 'Rich Media'|t }}</h1>
+
+      <h2 id="content-tabs" class="sub-header">{{ 'Content Tabs'|t }}</h2>
+
+      <div>
+        {# Nav Tabs #}
+        <ul class="nav nav-tabs content-tabs clearfix" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#description" aria-controls="{{ 'description'|t }}" role="tab" data-toggle="tab">{{ 'Description'|t }}</a>
+          </li>
+          <li role="presentation">
+            <a href="#specs" aria-controls="{{ 'specs'|t }}" role="tab" data-toggle="tab">{{ 'Specs'|t }}</a>
+          </li>
+          <li role="presentation">
+            <a href="#downloads" aria-controls="{{ 'downloads'|t }}" role="tab" data-toggle="tab">{{ 'Downloads'|t }}</a>
+          </li>
+          <li role="presentation">
+            <a href="#related" aria-controls="{{ 'related'|t }}" role="tab" data-toggle="tab">{{ 'Related'|t }}</a>
+          </li>
+        </ul>
+        {# / Nav Tabs #}
+
+        {# Tab Panes #}
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade in active" id="description">
+            <h2>Description</h2>
+            <p>
+              Tab 1 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="specs">
+            <h2>Specifications</h2>
+            <p>
+              Tab 2 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="downloads">
+            <h2>Our Downloads</h2>
+            <p>
+              Tab 3 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="related">
+            <h2>Related Products</h2>
+            <p>
+              Tab 4 content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifend nunc nec fringilla tristique.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        {# / Tab Panes #}
+      </div>
+    </div>
+
+    <!-- <div class="live-css-section">
+      <h1 id="icons" class="h-live-css-section">{{ 'Icons'|t }}</h1>
+
+      <div class="live-css-icons">
+        <ul class="bs-glyphicons-list clearfix"> <li> <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-asterisk</span> </li> <li> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plus</span> </li> <li> <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-euro</span> </li> <li> <span class="glyphicon glyphicon-eur" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eur</span> </li> <li> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-minus</span> </li> <li> <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud</span> </li> <li> <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-envelope</span> </li> <li> <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pencil</span> </li> <li> <span class="glyphicon glyphicon-glass" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-glass</span> </li> <li> <span class="glyphicon glyphicon-music" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-music</span> </li> <li> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-search</span> </li> <li> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-heart</span> </li> <li> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-star</span> </li> <li> <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-star-empty</span> </li> <li> <span class="glyphicon glyphicon-user" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-user</span> </li> <li> <span class="glyphicon glyphicon-film" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-film</span> </li> <li> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th-large</span> </li> <li> <span class="glyphicon glyphicon-th" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th</span> </li> <li> <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-th-list</span> </li> <li> <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok</span> </li> <li> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove</span> </li> <li> <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-zoom-in</span> </li> <li> <span class="glyphicon glyphicon-zoom-out" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-zoom-out</span> </li> <li> <span class="glyphicon glyphicon-off" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-off</span> </li> <li> <span class="glyphicon glyphicon-signal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-signal</span> </li> <li> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cog</span> </li> <li> <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-trash</span> </li> <li> <span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-home</span> </li> <li> <span class="glyphicon glyphicon-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-file</span> </li> <li> <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-time</span> </li> <li> <span class="glyphicon glyphicon-road" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-road</span> </li> <li> <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-download-alt</span> </li> <li> <span class="glyphicon glyphicon-download" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-download</span> </li> <li> <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-upload</span> </li> <li> <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-inbox</span> </li> <li> <span class="glyphicon glyphicon-play-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-play-circle</span> </li> <li> <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-repeat</span> </li> <li> <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-refresh</span> </li> <li> <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-list-alt</span> </li> <li> <span class="glyphicon glyphicon-lock" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-lock</span> </li> <li> <span class="glyphicon glyphicon-flag" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-flag</span> </li> <li> <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-headphones</span> </li> <li> <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-off</span> </li> <li> <span class="glyphicon glyphicon-volume-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-down</span> </li> <li> <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-volume-up</span> </li> <li> <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-qrcode</span> </li> <li> <span class="glyphicon glyphicon-barcode" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-barcode</span> </li> <li> <span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tag</span> </li> <li> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tags</span> </li> <li> <span class="glyphicon glyphicon-book" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-book</span> </li> <li> <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bookmark</span> </li> <li> <span class="glyphicon glyphicon-print" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-print</span> </li> <li> <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-camera</span> </li> <li> <span class="glyphicon glyphicon-font" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-font</span> </li> <li> <span class="glyphicon glyphicon-bold" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bold</span> </li> <li> <span class="glyphicon glyphicon-italic" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-italic</span> </li> <li> <span class="glyphicon glyphicon-text-height" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-height</span> </li> <li> <span class="glyphicon glyphicon-text-width" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-width</span> </li> <li> <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-left</span> </li> <li> <span class="glyphicon glyphicon-align-center" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-center</span> </li> <li> <span class="glyphicon glyphicon-align-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-right</span> </li> <li> <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-align-justify</span> </li> <li> <span class="glyphicon glyphicon-list" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-list</span> </li> <li> <span class="glyphicon glyphicon-indent-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-indent-left</span> </li> <li> <span class="glyphicon glyphicon-indent-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-indent-right</span> </li> <li> <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-facetime-video</span> </li> <li> <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-picture</span> </li> <li> <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-map-marker</span> </li> <li> <span class="glyphicon glyphicon-adjust" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-adjust</span> </li> <li> <span class="glyphicon glyphicon-tint" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tint</span> </li> <li> <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-edit</span> </li> <li> <span class="glyphicon glyphicon-share" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-share</span> </li> <li> <span class="glyphicon glyphicon-check" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-check</span> </li> <li> <span class="glyphicon glyphicon-move" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-move</span> </li> <li> <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-step-backward</span> </li> <li> <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fast-backward</span> </li> <li> <span class="glyphicon glyphicon-backward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-backward</span> </li> <li> <span class="glyphicon glyphicon-play" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-play</span> </li> <li> <span class="glyphicon glyphicon-pause" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pause</span> </li> <li> <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-stop</span> </li> <li> <span class="glyphicon glyphicon-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-forward</span> </li> <li> <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fast-forward</span> </li> <li> <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-step-forward</span> </li> <li> <span class="glyphicon glyphicon-eject" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eject</span> </li> <li> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-left</span> </li> <li> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-right</span> </li> <li> <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plus-sign</span> </li> <li> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-minus-sign</span> </li> <li> <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove-sign</span> </li> <li> <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok-sign</span> </li> <li> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-question-sign</span> </li> <li> <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-info-sign</span> </li> <li> <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-screenshot</span> </li> <li> <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-remove-circle</span> </li> <li> <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ok-circle</span> </li> <li> <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ban-circle</span> </li> <li> <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-left</span> </li> <li> <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-right</span> </li> <li> <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-up</span> </li> <li> <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-arrow-down</span> </li> <li> <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-share-alt</span> </li> <li> <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-full</span> </li> <li> <span class="glyphicon glyphicon-resize-small" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-small</span> </li> <li> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-exclamation-sign</span> </li> <li> <span class="glyphicon glyphicon-gift" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-gift</span> </li> <li> <span class="glyphicon glyphicon-leaf" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-leaf</span> </li> <li> <span class="glyphicon glyphicon-fire" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fire</span> </li> <li> <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eye-open</span> </li> <li> <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-eye-close</span> </li> <li> <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-warning-sign</span> </li> <li> <span class="glyphicon glyphicon-plane" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-plane</span> </li> <li> <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-calendar</span> </li> <li> <span class="glyphicon glyphicon-random" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-random</span> </li> <li> <span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-comment</span> </li> <li> <span class="glyphicon glyphicon-magnet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-magnet</span> </li> <li> <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-up</span> </li> <li> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-chevron-down</span> </li> <li> <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-retweet</span> </li> <li> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-shopping-cart</span> </li> <li> <span class="glyphicon glyphicon-folder-close" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-folder-close</span> </li> <li> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-folder-open</span> </li> <li> <span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-vertical</span> </li> <li> <span class="glyphicon glyphicon-resize-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-resize-horizontal</span> </li> <li> <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hdd</span> </li> <li> <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bullhorn</span> </li> <li> <span class="glyphicon glyphicon-bell" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bell</span> </li> <li> <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-certificate</span> </li> <li> <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-thumbs-up</span> </li> <li> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-thumbs-down</span> </li> <li> <span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-right</span> </li> <li> <span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-left</span> </li> <li> <span class="glyphicon glyphicon-hand-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-up</span> </li> <li> <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hand-down</span> </li> <li> <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-right</span> </li> <li> <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-left</span> </li> <li> <span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-up</span> </li> <li> <span class="glyphicon glyphicon-circle-arrow-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-circle-arrow-down</span> </li> <li> <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-globe</span> </li> <li> <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-wrench</span> </li> <li> <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tasks</span> </li> <li> <span class="glyphicon glyphicon-filter" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-filter</span> </li> <li> <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-briefcase</span> </li> <li> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-fullscreen</span> </li> <li> <span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-dashboard</span> </li> <li> <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-paperclip</span> </li> <li> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-heart-empty</span> </li> <li> <span class="glyphicon glyphicon-link" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-link</span> </li> <li> <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-phone</span> </li> <li> <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pushpin</span> </li> <li> <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-usd</span> </li> <li> <span class="glyphicon glyphicon-gbp" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-gbp</span> </li> <li> <span class="glyphicon glyphicon-sort" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort</span> </li> <li> <span class="glyphicon glyphicon-sort-by-alphabet" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet</span> </li> <li> <span class="glyphicon glyphicon-sort-by-alphabet-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-alphabet-alt</span> </li> <li> <span class="glyphicon glyphicon-sort-by-order" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-order</span> </li> <li> <span class="glyphicon glyphicon-sort-by-order-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-order-alt</span> </li> <li> <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes</span> </li> <li> <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sort-by-attributes-alt</span> </li> <li> <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-unchecked</span> </li> <li> <span class="glyphicon glyphicon-expand" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-expand</span> </li> <li> <span class="glyphicon glyphicon-collapse-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-collapse-down</span> </li> <li> <span class="glyphicon glyphicon-collapse-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-collapse-up</span> </li> <li> <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-log-in</span> </li> <li> <span class="glyphicon glyphicon-flash" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-flash</span> </li> <li> <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-log-out</span> </li> <li> <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-new-window</span> </li> <li> <span class="glyphicon glyphicon-record" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-record</span> </li> <li> <span class="glyphicon glyphicon-save" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-save</span> </li> <li> <span class="glyphicon glyphicon-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-open</span> </li> <li> <span class="glyphicon glyphicon-saved" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-saved</span> </li> <li> <span class="glyphicon glyphicon-import" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-import</span> </li> <li> <span class="glyphicon glyphicon-export" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-export</span> </li> <li> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-send</span> </li> <li> <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-disk</span> </li> <li> <span class="glyphicon glyphicon-floppy-saved" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-saved</span> </li> <li> <span class="glyphicon glyphicon-floppy-remove" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-remove</span> </li> <li> <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-save</span> </li> <li> <span class="glyphicon glyphicon-floppy-open" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-floppy-open</span> </li> <li> <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-credit-card</span> </li> <li> <span class="glyphicon glyphicon-transfer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-transfer</span> </li> <li> <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cutlery</span> </li> <li> <span class="glyphicon glyphicon-header" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-header</span> </li> <li> <span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-compressed</span> </li> <li> <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-earphone</span> </li> <li> <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-phone-alt</span> </li> <li> <span class="glyphicon glyphicon-tower" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tower</span> </li> <li> <span class="glyphicon glyphicon-stats" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-stats</span> </li> <li> <span class="glyphicon glyphicon-sd-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sd-video</span> </li> <li> <span class="glyphicon glyphicon-hd-video" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hd-video</span> </li> <li> <span class="glyphicon glyphicon-subtitles" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-subtitles</span> </li> <li> <span class="glyphicon glyphicon-sound-stereo" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-stereo</span> </li> <li> <span class="glyphicon glyphicon-sound-dolby" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-dolby</span> </li> <li> <span class="glyphicon glyphicon-sound-5-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-5-1</span> </li> <li> <span class="glyphicon glyphicon-sound-6-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-6-1</span> </li> <li> <span class="glyphicon glyphicon-sound-7-1" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sound-7-1</span> </li> <li> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-copyright-mark</span> </li> <li> <span class="glyphicon glyphicon-registration-mark" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-registration-mark</span> </li> <li> <span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud-download</span> </li> <li> <span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cloud-upload</span> </li> <li> <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tree-conifer</span> </li> <li> <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tree-deciduous</span> </li> <li> <span class="glyphicon glyphicon-cd" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-cd</span> </li> <li> <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-save-file</span> </li> <li> <span class="glyphicon glyphicon-open-file" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-open-file</span> </li> <li> <span class="glyphicon glyphicon-level-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-level-up</span> </li> <li> <span class="glyphicon glyphicon-copy" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-copy</span> </li> <li> <span class="glyphicon glyphicon-paste" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-paste</span> </li> <li> <span class="glyphicon glyphicon-alert" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-alert</span> </li> <li> <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-equalizer</span> </li> <li> <span class="glyphicon glyphicon-king" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-king</span> </li> <li> <span class="glyphicon glyphicon-queen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-queen</span> </li> <li> <span class="glyphicon glyphicon-pawn" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-pawn</span> </li> <li> <span class="glyphicon glyphicon-bishop" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bishop</span> </li> <li> <span class="glyphicon glyphicon-knight" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-knight</span> </li> <li> <span class="glyphicon glyphicon-baby-formula" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-baby-formula</span> </li> <li> <span class="glyphicon glyphicon-tent" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-tent</span> </li> <li> <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-blackboard</span> </li> <li> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bed</span> </li> <li> <span class="glyphicon glyphicon-apple" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-apple</span> </li> <li> <span class="glyphicon glyphicon-erase" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-erase</span> </li> <li> <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-hourglass</span> </li> <li> <span class="glyphicon glyphicon-lamp" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-lamp</span> </li> <li> <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-duplicate</span> </li> <li> <span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-piggy-bank</span> </li> <li> <span class="glyphicon glyphicon-scissors" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-scissors</span> </li> <li> <span class="glyphicon glyphicon-bitcoin" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-bitcoin</span> </li> <li> <span class="glyphicon glyphicon-btc" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-btc</span> </li> <li> <span class="glyphicon glyphicon-xbt" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-xbt</span> </li> <li> <span class="glyphicon glyphicon-yen" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-yen</span> </li> <li> <span class="glyphicon glyphicon-jpy" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-jpy</span> </li> <li> <span class="glyphicon glyphicon-ruble" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ruble</span> </li> <li> <span class="glyphicon glyphicon-rub" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-rub</span> </li> <li> <span class="glyphicon glyphicon-scale" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-scale</span> </li> <li> <span class="glyphicon glyphicon-ice-lolly" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ice-lolly</span> </li> <li> <span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-ice-lolly-tasted</span> </li> <li> <span class="glyphicon glyphicon-education" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-education</span> </li> <li> <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-option-horizontal</span> </li> <li> <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-option-vertical</span> </li> <li> <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-hamburger</span> </li> <li> <span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-modal-window</span> </li> <li> <span class="glyphicon glyphicon-oil" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-oil</span> </li> <li> <span class="glyphicon glyphicon-grain" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-grain</span> </li> <li> <span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-sunglasses</span> </li> <li> <span class="glyphicon glyphicon-text-size" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-size</span> </li> <li> <span class="glyphicon glyphicon-text-color" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-color</span> </li> <li> <span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-text-background</span> </li> <li> <span class="glyphicon glyphicon-object-align-top" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-top</span> </li> <li> <span class="glyphicon glyphicon-object-align-bottom" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-bottom</span> </li> <li> <span class="glyphicon glyphicon-object-align-horizontal" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-horizontal</span> </li> <li> <span class="glyphicon glyphicon-object-align-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-left</span> </li> <li> <span class="glyphicon glyphicon-object-align-vertical" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-vertical</span> </li> <li> <span class="glyphicon glyphicon-object-align-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-object-align-right</span> </li> <li> <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-right</span> </li> <li> <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-left</span> </li> <li> <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-bottom</span> </li> <li> <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-triangle-top</span> </li> <li> <span class="glyphicon glyphicon-console" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-console</span> </li> <li> <span class="glyphicon glyphicon-superscript" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-superscript</span> </li> <li> <span class="glyphicon glyphicon-subscript" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-subscript</span> </li> <li> <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-left</span> </li> <li> <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-right</span> </li> <li> <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-down</span> </li> <li> <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span> <span class="glyphicon-class">glyphicon glyphicon-menu-up</span> </li> </ul>
+
+
+
+        <ul class="clearfix">
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-live-chat-bubble"></i>
+            </div>
+            <div>.ico-live-chat-bubble</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-search"></i>
+            </div>
+            <div>.ico-search</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-facebook"></i>
+            </div>
+            <div>.ico-social-facebook</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-twitter"></i>
+            </div>
+            <div>.ico-social-twitter</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-youtube"></i>
+            </div>
+            <div>.ico-social-youtube</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-google"></i>
+            </div>
+            <div>.ico-social-google</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-instagram"></i>
+            </div>
+            <div>.ico-social-instagram</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-social-pinterest"></i>
+            </div>
+            <div>.ico-social-pinterest</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-comment-bubble"></i>
+            </div>
+            <div>.ico-comment-bubble</div>
+          </li>
+          <li>
+            <div class="live-css-icons__icon">
+              <i class="ico-comment-reply"></i>
+            </div>
+            <div>.ico-comment-reply</div>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div class="live-css-section">
+      <h1 id="components" class="h-live-css-section">{{ 'Components'|t }}</h1>
+
+      <h2 id="blog-listing" class="sub-header">{{ 'Blog Listing'|t }}</h2>
+
+      {# Blog Sample #}
+      <div class="blog-listing-item">
+        <div class="blog-listing-item__image">
+          <a href="/blog/acro-blog-title">
+            <div class="field field--name-field-blog-image field--type-image field--label-hidden field__item">
+              <img width="827" height="360" alt="Sample" src="{{ module_path }}/gfx/img_sample_banner.jpg">
+            </div>
+          </a>
+        </div>
+        <div class="blog-listing-item__title">
+          <a href="/blog/acro-blog-title"><h3 class="field field--name-title field--type-string field--label-hidden">Acro Blog Title</h3></a>
+        </div>
+        <div class="blog-post-meta">
+          <div class="field field--name-field-blog-date field--type-datetime field--label-hidden field__item"><span class="fa fa-calendar-o" aria-hidden="true"></span> February 1, 2016</div>
+          <i>|</i>
+          <span class="fa fa-user" aria-hidden="true"></span> By <a href="/blog/author/25">John Smith</a>
+        </div>
+        <div class="blog-listing-item__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dui in nisi tempor ultrices sit amet vel nunc. Cras id scelerisque enim.
+          Aenean condimentum arcu leo, in pellentesque lectus varius sit amet. Duis condimentum lectus vitae turpis vulputa ...
+        </div>
+        <div class="blog-listing-item__footer clearfix">
+          <a class="btn btn-primary" href="/blog/acro-blog-title">Read More</a>
+          <div class="blog-listing-item__tags blog-post-tags">
+            <span class="blog-post-tags--label">Posted in</span>
+            <div class="field field--name-field-blog-category field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item"><a hreflang="en" href="/blog/tag/drupal">Drupal</a></div>
+              <div class="field__item"><a hreflang="en" href="/blog/tag/featured">Featured</a></div>
+              <div class="field__item"><a hreflang="en" href="/blog/tag/news">News</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {# / Blog Sample #}
+
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="image-gallery" class="sub-header">{{ 'Image Gallery'|t }}</h2>
+
+      {# Image Gallery Sample #}
+      <div class="image-gallery">
+        <div class="image-gallery__slider">
+          <ul class="slides clearfix">
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery__main-image-wrapper">
+                <div class="image-gallery__caption">
+                  <p>Sample caption.</p>
+                </div>
+                <div class="image-gallery__main-image">
+                  <img src="https://unsplash.it/900/500/?random" alt="">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="image-gallery-nav">
+        <div class="image-gallery-nav__slider">
+          <ul class="slides clearfix">
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+            <li>
+              <div class="image-gallery-nav__thumb">
+                <a><img src="https://unsplash.it/900/500/?random" alt=""></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      {# / Image Gallery Sample #}
+
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="accordion" class="sub-header">{{ 'Accordion'|t }}</h2>
+
+      {# Accordion Sample #}
+      <div class="base-accordion">
+        <div class="base-accordion__item">
+          <a class="base-accordion__header" href="#">{{ 'Sample Item #1'|t }}</a>
+
+          <div class="base-accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida feugiat quam, at laoreet risus blandit vitae. Maecenas tristique, justo nec
+              imperdiet mollis, nulla justo vestibulum risus, in viverra nulla ligula et diam. Morbi faucibus magna ut turpis dapibus, aliquam sodales augue viverra.
+              Donec quis finibus sem, eu blandit quam. Donec vitae sem vel metus aliquet aliquam eu et libero.
+            </p>
+          </div>
+        </div>
+        <div class="base-accordion__item">
+          <a class="base-accordion__header" href="#">{{ 'Sample Item #2'|t }}</a>
+
+          <div class="base-accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida feugiat quam, at laoreet risus blandit vitae. Maecenas tristique, justo nec
+              imperdiet mollis, nulla justo vestibulum risus, in viverra nulla ligula et diam. Morbi faucibus magna ut turpis dapibus, aliquam sodales augue viverra.
+              Donec quis finibus sem, eu blandit quam. Donec vitae sem vel metus aliquet aliquam eu et libero.
+            </p>
+          </div>
+        </div>
+        <div class="base-accordion__item">
+          <a class="base-accordion__header" href="#">{{ 'Sample Item #3'|t }}</a>
+
+          <div class="base-accordion__content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris gravida feugiat quam, at laoreet risus blandit vitae. Maecenas tristique, justo nec
+              imperdiet mollis, nulla justo vestibulum risus, in viverra nulla ligula et diam. Morbi faucibus magna ut turpis dapibus, aliquam sodales augue viverra.
+              Donec quis finibus sem, eu blandit quam. Donec vitae sem vel metus aliquet aliquam eu et libero.
+            </p>
+          </div>
+        </div>
+      </div>
+      {# / Accordion Sample #}
+
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="cards" class="sub-header">{{ 'Cards'|t }}</h2>
+
+      <div class="row">
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <div class="card">
+            <div class="card__image">
+              <img src="https://unsplash.it/300/150/?random" alt="Image description here">
+            </div>
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+              <a href="#" class="btn btn-block btn-primary">Read More</a>
+            </div>
+          </div>
+          {# / Card Sample #}
+        </div>
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <div class="card">
+            <div class="card__image">
+              <img src="https://unsplash.it/300/150/?random" alt="Image description here">
+            </div>
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+            </div>
+          </div>
+          {# / Card Sample #}
+        </div>
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <div class="card">
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+            </div>
+          </div>
+          {# / Card Sample #}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <a class="card" href="#">
+            <div class="card__image">
+              <img src="https://unsplash.it/300/150/?random" alt="Image description here">
+            </div>
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+              <button class="btn btn-block btn-primary">Read More</button>
+            </div>
+          </a>
+          {# / Card Sample #}
+        </div>
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <a class="card" href="#">
+            <div class="card__image">
+              <img src="https://unsplash.it/300/150/?random" alt="Image description here">
+            </div>
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+            </div>
+          </a>
+          {# / Card Sample #}
+        </div>
+        <div class="col-sm-4">
+          {# Card Sample #}
+          <a class="card" href="#">
+            <div class="card__text-wrapper">
+              <h3>Card Title</h3>
+              <p>Card Description text lorme ipsum bla bla self-contained unit of a discourse in writing </p>
+            </div>
+          </a>
+          {# / Card Sample #}
+        </div>
+      </div>
+    </div>
+
+    <div class="live-css-section">
+      <h2 id="modals" class="sub-header">{{ 'Modals'|t }}</h2>
+
+      {# Modal Sample #}
+      <div class="modal-wrapper">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                In sed elit lorem. Cras dapibus tincidunt est, efficitur maximus lacus lobortis in. Pellentesque fermentum sem non felis consectetur semper. Donec in pharetra libero, vitae imperdiet orci. Cras at finibus tellus.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {# / Modal Sample #}
+    </div>
+
+  </div>
+  <div class="col-md-3 live-css-nav-col">
+
+    <nav class="live-css-nav hidden-print hidden-xs hidden-sm affix-top" role="navigation">
+      <ul class="nav">
+        <li>
+          <a href="#variables">{{ 'Variables'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#colors">{{ 'Colors'|t }}</a>
+            </li>
+            <li>
+              <a href="#fonts">{{ 'Fonts'|t }}</a>
+            </li>
+            <li>
+              <a href="#other-variables">{{ 'Other Variables'|t }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#typography">{{ 'Typography'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#headings">{{ 'Headings'|t }}</a>
+            </li>
+            <li>
+              <a href="#paragraphs">{{ 'Paragraphs'|t }}</a>
+            </li>
+            <li>
+              <a href="#lists">{{ 'Lists'|t }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#tables">{{ 'Tables'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#basic-tables">{{ 'Basic Table'|t }}</a>
+            </li>
+            <li>
+              <a href="#striped-tables">{{ 'Striped Table'|t }}</a>
+            </li>
+            <li>
+              <a href="#bordered-tables">{{ 'Bordered Table'|t }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#buttons">{{ 'Buttons'|t }}</a>
+        </li>
+        <li>
+          <a href="#drupal-specific">{{ 'Drupal Specific'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#admin-tabs">{{ 'Admin Tabs'|t }}</a>
+            </li>
+            <li>
+              <a href="#drupal-messages">{{ 'Drupal Messages'|t }}</a>
+            </li>
+            <li>
+              <a href="#drupal-forms">{{ 'Forms'|t }}</a>
+            </li>
+            <li>
+              <a href="#drupal-pagination">{{ 'Pagination'|t }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#rich-media">{{ 'Rich Media'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#content-tabs">{{ 'Content Tabs'|t }}</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#components">{{ 'Components'|t }}</a>
+          <ul class="nav">
+            <li>
+              <a href="#blog-listing">{{ 'Blog Listing'|t }}</a>
+            </li>
+            <li>
+              <a href="#image-gallery">{{ 'Image Gallery'|t }}</a>
+            </li>
+            <li>
+              <a href="#accordion">{{ 'Accordion'|t }}</a>
+            </li>
+            <li>
+              <a href="#cards">{{ 'Cards'|t }}</a>
+            </li>
+            <li>
+              <a href="#modals">{{ 'Modals'|t }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>
+
+
+
+
+
+

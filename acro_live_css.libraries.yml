@@ -1,0 +1,11 @@
+acro-live-css:
+  version: 1.x
+  css:
+    theme:
+      css/acro-live-css.css: {}
+  js:
+    js/acro-live-css.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - orange_framework/flexslider
