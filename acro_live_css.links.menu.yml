@@ -1,6 +1,6 @@
 acro_live_css.admin:
   title: 'Acro Live CSS'
-  description: 'Acro Live CSS admin settings page link'
+  description: 'Acro Live CSS admin settings page link.'
   parent: system.admin_config_development
   route_name: acro_live_css.content
   weight: 100

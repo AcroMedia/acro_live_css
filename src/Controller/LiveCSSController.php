@@ -16,7 +16,3 @@ class LiveCSSController extends ControllerBase {
   }
 }
 ?>
-
-
-
-
