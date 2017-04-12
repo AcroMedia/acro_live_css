@@ -11,7 +11,7 @@
         <ul class="list-inline">
           <li class="live-css-v-primary"><i></i><strong>{{ 'Primary'|t }}</strong><span class="live-css--code-snippet">$c-primary<br>$c-primary-hover</span></li>
           <li class="live-css-v-secondary"><i></i><strong>{{ 'Secondary'|t }}</strong><span class="live-css--code-snippet">$c-secondary<br>$c-secondary-hover</span></li>
-          <li class="live-css-v-tertiary"><i></i><strong>{{ 'Tertiary'|t }}</strong><span class="live-css--code-snippet">$c-tertiary<br>$c-tertiary</span></li>
+          <li class="live-css-v-tertiary"><i></i><strong>{{ 'Tertiary'|t }}</strong><span class="live-css--code-snippet">$c-tertiary<br>$c-tertiary-hover</span></li>
           <li class="live-css-v-link"><i></i><strong>{{ 'Link'|t }}</strong><span class="live-css--code-snippet">$c-link<br>$c-link-hover</span></li>
           <li class="live-css-v-accent-1"><i></i><strong>{{ 'Accent 1'|t }}</strong><span class="live-css--code-snippet">$c-accent-1</span></li>
           <li class="live-css-v-accent-2"><i></i><strong>{{ 'Accent 2'|t }}</strong><span class="live-css--code-snippet">$c-accent-2</span></li>
@@ -492,19 +492,19 @@
       {# Blog Sample. #}
       <div class="blog-listing-item">
         <div class="blog-listing-item__image">
-          <a href="/blog/acro-blog-title">
+          <a href="#">
             <div class="field field--name-field-blog-image field--type-image field--label-hidden field__item">
               <img width="827" height="360" alt="Sample" src="{{ module_path }}/gfx/img_sample_banner.jpg">
             </div>
           </a>
         </div>
-        <div class="blog-listing-item__title">
-          <a href="/blog/acro-blog-title"><h3 class="field field--name-title field--type-string field--label-hidden">Acro Blog Title</h3></a>
-        </div>
+        <h3 class="blog-listing-item__title">
+          <a href="#">Acro Blog Title</a>
+        </h3>
         <div class="blog-post-meta">
-          <div class="field field--name-field-blog-date field--type-datetime field--label-hidden field__item"><span class="fa fa-calendar-o" aria-hidden="true"></span> February 1, 2016</div>
+          <div class="field field--name-field-blog-date field--type-datetime field--label-hidden field__item">February 1, 2016</div>
           <i>|</i>
-          <span class="fa fa-user" aria-hidden="true"></span> By <a href="/blog/author/25">John Smith</a>
+          By <a href="#">John Smith</a>
         </div>
         <div class="blog-listing-item__body">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed dui in nisi tempor ultrices sit amet vel nunc. Cras id scelerisque enim.
@@ -514,11 +514,17 @@
           <a class="btn btn-primary" href="/blog/acro-blog-title">Read More</a>
           <div class="blog-listing-item__tags blog-post-tags">
             <span class="blog-post-tags--label">Posted in</span>
-            <div class="field field--name-field-blog-category field--type-entity-reference field--label-hidden field__items">
-              <div class="field__item"><a hreflang="en" href="/blog/tag/drupal">Drupal</a></div>
-              <div class="field__item"><a hreflang="en" href="/blog/tag/featured">Featured</a></div>
-              <div class="field__item"><a hreflang="en" href="/blog/tag/news">News</a></div>
-            </div>
+            <ul class="blog-post-tags__list clearfix">
+              <li>
+                <a href="#">Drupal</a>
+              </li>
+              <li>
+                <a href="#">Featured</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
