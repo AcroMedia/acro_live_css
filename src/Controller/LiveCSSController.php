@@ -10,9 +10,11 @@ use Drupal\Core\Controller\ControllerBase;
 
 class LiveCSSController extends ControllerBase {
   public function content() {
-    return array(
-      '#theme' => 'live_css'
-    );
+    $page = [
+      '#type' => 'page',
+      '#theme' => 'live_css',
+    ];
+
+    return $page;
   }
 }
-?>

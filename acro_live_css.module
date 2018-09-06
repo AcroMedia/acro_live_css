@@ -4,10 +4,15 @@
  */
 function acro_live_css_theme($existing, $type, $theme, $path) {
   global $base_path;
-  return array(
-    'live_css' => array(
-      'variables' => array('module_path' => $base_path . $path),
-    ),
-  );
+  return [
+    'live_css' => [
+      'render element' => 'page',
+      'path' => $path . '/templates',
+      'template' => 'live-css',
+      'variables' => [
+        'module_path' => $base_path . $path,
+      ],
+    ],
+  ];
 }
 ?>

@@ -1,6 +1,11 @@
 /**
  * Live CSS.
  */
+.live-css__header {
+  clear: both;
+  margin: 0 0 40px 0;
+  padding: 40px 0 0 0;
+}
 .live-css-section {
   clear: both;
   margin: 0 0 60px 0;
@@ -73,6 +78,7 @@ h1.h-live-css-section {
   padding: 0;
   width: 195px;
   text-align: center;
+  vertical-align: top;
 }
 .live-css-variables ul li i {
   position: relative;
