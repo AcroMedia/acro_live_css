@@ -11,8 +11,8 @@ function acro_live_css_theme($existing, $type, $theme, $path) {
       'template' => 'live-css',
       'variables' => [
         'module_path' => $base_path . $path,
+        'orange_ecom_starter_is_active' => NULL,
       ],
     ],
   ];
 }
-?>
